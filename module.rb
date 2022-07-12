@@ -8,7 +8,7 @@ module MyEnumerable
     list.each do |i|
       ary.push(i) if yield i
     end
-    ary.length == list.length
+    p ary.length == list.length
   end
 
   def any?
@@ -16,6 +16,14 @@ module MyEnumerable
     list.each do |i|
       ary.push(i) if yield i
     end
-    !ary.empty?
+    p !ary.empty?
+  end
+
+  def filter
+    ary = []
+    list.each do |i|
+      ary.push(i) if yield i
+    end
+    p ary
   end
 end

@@ -8,11 +8,16 @@ class MyList
   end
 end
 
-# Test the all? method
+# Create a list
 list = MyList.new(1, 2, 3, 4)
-puts(list.all? { |e| e < 5 })
-puts(list.all? { |e| e > 5 })
 
-# Test the any? method
-puts(list.any? { |e| e == 2 })
-puts(list.any? { |e| e == 5 })
+# Test #all? method
+list.all? { |e| e < 5 }
+list.all? { |e| e > 5 }
+
+# Test #any? method
+list.any? { |e| e == 2 }
+list.any? { |e| e == 5 }
+
+# Test #filter method
+list.filter(&:even?)
