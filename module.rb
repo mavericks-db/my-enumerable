@@ -26,4 +26,12 @@ module MyEnumerable
     end
     p ary
   end
+
+  def max
+    max_num = 0
+    list.each do |i|
+      i > max_num ? max_num = i : null
+    end
+    p max_num
+  end
 end

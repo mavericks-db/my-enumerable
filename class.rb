@@ -21,3 +21,6 @@ list.any? { |e| e == 5 }
 
 # Test #filter method
 list.filter(&:even?)
+
+# Test #max method
+list.max
