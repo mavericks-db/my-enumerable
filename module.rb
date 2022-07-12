@@ -42,4 +42,16 @@ module MyEnumerable
     end
     p min_num
   end
+
+  def sort
+    ary = []
+    new_ary = list
+    list.length.times do
+      orig_ary = list
+      item_remove = orig_ary.min
+      ary.push(item_remove)
+      new_ary = orig_ary.delete(item_remove)
+    end
+    p ary
+  end
 end

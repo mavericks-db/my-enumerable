@@ -27,3 +27,6 @@ list.max
 
 # Test #max method
 list.min
+
+# Test #max method
+list.sort
