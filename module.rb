@@ -30,8 +30,16 @@ module MyEnumerable
   def max
     max_num = 0
     list.each do |i|
-      i > max_num ? max_num = i : null
+      i > max_num ? max_num = i : i
     end
     p max_num
+  end
+
+  def min
+    min_num = 999
+    list.each do |i|
+      i < min_num ? min_num = i : i
+    end
+    p min_num
   end
 end

@@ -24,3 +24,6 @@ list.filter(&:even?)
 
 # Test #max method
 list.max
+
+# Test #max method
+list.min
