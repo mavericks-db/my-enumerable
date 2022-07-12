@@ -10,4 +10,12 @@ module MyEnumerable
     end
     ary.length == list.length
   end
+
+  def any?
+    ary = []
+    list.each do |i|
+      ary.push(i) if yield i
+    end
+    !ary.empty?
+  end
 end
